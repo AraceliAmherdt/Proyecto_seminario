@@ -27,7 +27,7 @@ def saludar(nombre, historial):
 
 
 with gr.Blocks() as demo:
-    chatbot = gr.Chatbot(type="messages", label="Chatbot")
+    chatbot = gr.Chatbot(label="Chatbot")
     nombre = gr.Textbox(label="Tu nombre")
     boton = gr.Button("Saludar")
 
