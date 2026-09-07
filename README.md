@@ -14,8 +14,10 @@ short_description: gradio
 
 # Proyecto Integrador - IFST 18
 
-App de ejemplo con Gradio. Deploy en Hugging Face Spaces:
-https://huggingface.co/spaces/AraceliAmherdt/proyectoSeminario
+App con Gradio. El proyecto vive en dos remotes:
+
+- **Codigo (GitHub):** https://github.com/AraceliAmherdt/Proyecto_seminario
+- **Deploy (Hugging Face Spaces):** https://huggingface.co/spaces/AraceliAmherdt/proyectoSeminario
 
 ## Requisitos
 
@@ -42,10 +44,13 @@ https://huggingface.co/spaces/AraceliAmherdt/proyectoSeminario
 python app.py
 ```
 
-## Deploy a Hugging Face Spaces
+## Publicar cambios
 
 ```
 git add -A
 git commit -m "Actualizar app"
-git push space main
+git push origin main    # GitHub (codigo)
+git push space main     # Hugging Face (deploy)
 ```
+
+Al hacer `git push space main`, Hugging Face reconstruye el Space automaticamente.

@@ -11,5 +11,11 @@ def saludar(nombre):
     return f"Hola {nombre}"
 
 
-demo = gr.Interface(fn=saludar, inputs="text", outputs="text")
+with gr.Blocks() as demo:
+    nombre = gr.Textbox(label="Tu nombre")
+    salida = gr.Textbox(label="Respuesta")
+    boton = gr.Button("Saludar")
+
+    boton.click(fn=saludar, inputs=nombre, outputs=salida)
+
 demo.launch()
