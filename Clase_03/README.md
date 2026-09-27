@@ -51,8 +51,6 @@ El flag `-u` deja guardada la relación entre la rama local `main` y `origin/mai
 
 ## Actividad de la semana
 
-Contá cómo resolviste cada situación de la clase de hoy.
-
 ### 1. README duplicado
 
 Si cuando creamos un proyecto local agregamos un documento README.md, y al crear el repo que después conectaremos se crea otro README, al momento de pushear va a entrar en conflicto y no sabrá cuál elegir, teniendo que editarlo a mano y luego generar otro add y push. La manera más limpia y fácil de evitarnos esos problemas es que, al momento de crear nuestro repo, destildemos la opción de que se cree con su README, y al pushear desde nuestro local, solo tendremos el README.md creado en nuestro proyecto, sin que entre en conflicto.

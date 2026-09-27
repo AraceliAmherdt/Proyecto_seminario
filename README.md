@@ -12,7 +12,7 @@ Cada carpeta `Clase_XX` corresponde a una clase del seminario y tiene su propio 
 |---|---|
 | [Clase_02](Clase_02/README.md) | Introducción a Gradio: primera interfaz web simple con Python |
 | [Clase_03](Clase_03/README.md) | Conexión de un proyecto local con un repositorio en GitHub |
-| Clase_04 | (pendiente) |
+| [Clase_04](Clase_04/README.md) | Gradio con Blocks: componente nuevo y función propia |
 | Clase_05 | (pendiente) |
 
 ## Cómo usar este repositorio
