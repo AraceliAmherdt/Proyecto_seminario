@@ -1,3 +1,4 @@
+import os
 import time
 
 import gradio as gr
@@ -43,4 +44,10 @@ with gr.Blocks() as demo:
     boton_calcular = gr.Button("Calcular")
     boton_calcular.click(fn=calcular_interes_simple, inputs=capital, outputs=resultado)
 
-demo.launch(share=True)
+puerto = os.environ.get("PORT")
+if puerto:
+    # Corriendo en Render: hay que escuchar en 0.0.0.0 y en el puerto que asigna.
+    demo.launch(server_name="0.0.0.0", server_port=int(puerto))
+else:
+    # Corriendo local: share=True genera el link publico temporal para la actividad.
+    demo.launch(share=True)
