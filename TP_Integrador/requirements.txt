@@ -1,0 +1,2 @@
+Gradio == 6.28.0
+spaces

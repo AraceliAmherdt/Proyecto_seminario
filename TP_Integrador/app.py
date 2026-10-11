@@ -1,6 +1,7 @@
 import gradio as gr
+import spaces
 
-
+@spaces.GPU
 def saludar(texto):
     return f"Recibí: {texto}"
 
