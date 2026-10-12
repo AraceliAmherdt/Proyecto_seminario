@@ -1,5 +1,6 @@
 import gradio as gr
 import spaces
+import torch
 from transformers import pipeline
 
 # --- Configuración (decidida en la notebook) ---
@@ -8,8 +9,8 @@ CATEGORIAS = ["comida", "transporte", "servicios", "salud", "ocio", "educación"
 PLANTILLA = "Este gasto es de {}."
 
 # --- Se carga UNA vez, al arrancar la app (fuera de la función con GPU) ---
-clasificador = pipeline("zero-shot-classification", model=MODELO, device="cuda")
-
+DISPOSITIVO = 0 if torch.cuda.is_available() else -1   # 0 = primera GPU, -1 = CPU
+clasificador = pipeline("zero-shot-classification", model=MODELO, device=DISPOSITIVO)
 
 # --- Se ejecuta en CADA consulta, con GPU prestada por ZeroGPU ---
 @spaces.GPU
