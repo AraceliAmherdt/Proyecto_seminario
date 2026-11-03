@@ -15,6 +15,8 @@ Cada carpeta tiene su propio `README.md` con el detalle de lo trabajado: qué ha
 | [Clase_04](Clase_04/README.md) | Gradio con Blocks: componente nuevo y función propia |
 | [Clase_05](Clase_05/README.md) | Deploy en Render y prueba mínima en Streamlit |
 | Clase_06 | Ticket de salida de la clase (PDF) |
+| [Clase_10](Clase_10/README.md) | Del dataset al modelo exportado: el camino del entrenamiento en scikit-learn, PyTorch y Keras |
+| [Clase_11](Clase_11/README.md) | Publicar modelos en Hugging Face Hub con su Model Card |
 
 ## Trabajo Práctico Integrador
 

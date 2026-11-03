@@ -1,0 +1,10 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.DS_Store
+# Scripts personales de la docente (no se suben)
+publicar_en_hub.py
+crear_entornos.bat
