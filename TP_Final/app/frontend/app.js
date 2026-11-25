@@ -1,5 +1,9 @@
 // Dirección de la API. Por ahora, la local. En la etapa 9 la cambiás por la de Render.
-const API_URL = "http://127.0.0.1:8000";
+// Si la página se abre en tu compu usa la API local; si no, la publicada en Render.
+const ES_LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname);
+const API_URL = ES_LOCAL
+  ? "http://127.0.0.1:8000"
+  : "https://api-seguro-medico.onrender.com";
 
 const formulario = document.getElementById("formulario");
 const boton = document.getElementById("boton");

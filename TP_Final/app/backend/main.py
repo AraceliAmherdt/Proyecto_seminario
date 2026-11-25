@@ -30,6 +30,7 @@ app = FastAPI(title="API Costo de Seguro Médico", lifespan=lifespan)
 ORIGENES_PERMITIDOS = [
     "http://localhost:5500",
     "http://127.0.0.1:5500",
+    "https://araceliamherdt.github.io",
 ]
 
 app.add_middleware(
