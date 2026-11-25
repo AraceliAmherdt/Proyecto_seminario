@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estimador de costo de seguro médico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>¿Cuánto costaría tu seguro médico?</h1>
+    <p class="bajada">Completá los datos y un modelo de machine learning estima el costo anual en dólares.</p>
+
+    <form id="formulario" novalidate>
+      <label>Edad
+        <input type="number" id="edad" min="18" max="64" value="35" required>
+      </label>
+
+      <label>Sexo
+        <select id="sexo">
+          <option value="female">Mujer</option>
+          <option value="male" selected>Hombre</option>
+        </select>
+      </label>
+
+      <label>Índice de masa corporal (IMC)
+        <input type="number" id="imc" min="10" max="60" step="0.1" value="28.5" required>
+      </label>
+
+      <label>Hijos a cargo
+        <input type="number" id="hijos" min="0" max="5" value="2" required>
+      </label>
+
+      <label>¿Fuma?
+        <select id="fumador">
+          <option value="no" selected>No</option>
+          <option value="yes">Sí</option>
+        </select>
+      </label>
+
+      <label>Región (EE. UU.)
+        <select id="region">
+          <option value="northeast">Noreste</option>
+          <option value="northwest" selected>Noroeste</option>
+          <option value="southeast">Sureste</option>
+          <option value="southwest">Suroeste</option>
+        </select>
+      </label>
+
+      <button type="submit" id="boton">Estimar costo</button>
+    </form>
+
+    <div id="resultado"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
