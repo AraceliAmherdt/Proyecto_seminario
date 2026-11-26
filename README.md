@@ -1,6 +1,6 @@
 # Seminario de Actualización - IFTS 18
 
-Repositorio con las actividades semanales del Seminario de Actualización correspondiente al IFTS 18, organizados por clase, más el Trabajo Práctico Integrador final.
+Repositorio con las actividades semanales del Seminario de Actualización correspondiente al IFTS 18, organizados por clase, más el Trabajo Práctico Integrador y el Trabajo Práctico Final.
 
 **Alumna:** Araceli Amherdt
 
@@ -24,6 +24,12 @@ Cada carpeta tiene su propio `README.md` con el detalle de lo trabajado: qué ha
 
 **App online:** https://huggingface.co/spaces/AraceliAmherdt/Clasificador_gastos
 
+## Trabajo Práctico Final
+
+[**TP_Final**](TP_Final/README.md) — Estimador de costo de seguro médico: proyecto de machine learning de punta a punta. En una notebook se exploró el dataset *insurance*, se compararon varios modelos y se eligió un Random Forest de profundidad 5 (R² 0.90), exportado con `joblib`. El modelo se sirve con una API en FastAPI desplegada en Render, y una página en HTML/CSS/JavaScript publicada en GitHub Pages la consume. También está la presentación (`.pptx`). Su README tiene el detalle de cada parte y cómo correrlo local.
+
+**App online:** https://araceliamherdt.github.io/Proyecto_seminario/TP_Final/app/frontend/
+
 ## Cómo usar este repositorio
 
-Cada clase y el TP Integrador tienen su propio entorno virtual y de ser necesario (segun la actividad semanal), sus propias dependencias (`requirements.txt`) independientes entre sí. Entrá a la carpeta que te interese y seguí las instrucciones de su README para levantar el entorno correspondiente.
+Cada clase, el TP Integrador y el TP Final tienen su propio entorno virtual y de ser necesario (segun la actividad semanal), sus propias dependencias (`requirements.txt`) independientes entre sí. Entrá a la carpeta que te interese y seguí las instrucciones de su README para levantar el entorno correspondiente.
